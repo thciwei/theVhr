@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: thciwei
+    url: jdbc:mysql://localhost:3306/vhr?userUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimeZone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 192.168.146.1
+    port: 5672
+logging:
+  level:
+   com:
+    thciwei:
+     proj:
+      mapper: debug
