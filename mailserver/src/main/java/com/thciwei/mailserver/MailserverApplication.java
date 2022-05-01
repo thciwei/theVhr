@@ -1,5 +1,6 @@
 package com.thciwei.mailserver;
 
+import com.thciwei.proj.bean.MailConstants;
 import org.springframework.amqp.core.Queue;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +16,7 @@ public class MailserverApplication {
 
     @Bean
     Queue queue() {
-        return new Queue("thciwei.mail.welcome");
-
+        //return new Queue("thciwei.mail.welcome");
+        return new Queue(MailConstants.MAIL_QUEUE_NAME);
     }
 }

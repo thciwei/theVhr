@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>vhrserver</module>
+        <module>kfkserver</module>
         <module>mailserver</module>
     </modules>
 
