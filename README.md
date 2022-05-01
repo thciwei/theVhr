@@ -19,8 +19,12 @@ kfkserver结构如下：
 -- kfk-web
 -- kfk-model
 ```
+#### 项目展示
+![](https://gitee.com/thciweicloud/tmp/raw/master/20220501184848.png)
 
+![](https://gitee.com/thciweicloud/tmp/raw/master/20220501185008.png)
 
+![](https://gitee.com/thciweicloud/tmp/raw/master/20220501185111.png)
 
 #### 推荐学习
 
