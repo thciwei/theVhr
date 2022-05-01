@@ -11,6 +11,17 @@
 * mailserver **邮件发送模块**，新员工入职自动发送入职邮件
 * springboot_vhr 后台管理界面
 
+SPA应用进行了整体的maven模块化改造
+```
+kfkserver结构如下：
+-- kfk-mapper
+-- kfk-service
+-- kfk-web
+-- kfk-model
+```
+
+
+
 #### 推荐学习
 
 * 江南一点雨松哥的 [微人事](https://github.com/lenve/vhr) 和 适合初学者的 [微部落](https://github.com/lenve/VBlog)
