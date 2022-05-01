@@ -7,7 +7,7 @@
 
 #### 项目目录
 
-* vhrserver 负责CRUD和登录认证
+* kfkserver 负责CRUD和登录认证
 * mailserver **邮件发送模块**，新员工入职自动发送入职邮件
 * springboot_vhr 后台管理界面
 
