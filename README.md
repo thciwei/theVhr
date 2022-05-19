@@ -20,11 +20,11 @@ kfkserver结构如下：
 -- kfk-model
 ```
 #### 项目展示
-![](https://gitee.com/thciweicloud/tmp/raw/master/20220501184848.png)
+![](http://tva1.sinaimg.cn/large/006yRl4Gly1h2e50nsg0sj31gc0oatn9.jpg)
 
-![](https://gitee.com/thciweicloud/tmp/raw/master/20220501185008.png)
+![](http://tva1.sinaimg.cn/large/006yRl4Gly1h2e51bodl2j31gf0otgqs.jpg)
 
-![](https://gitee.com/thciweicloud/tmp/raw/master/20220501185111.png)
+![](http://tva1.sinaimg.cn/large/006yRl4Gly1h2e51p93pzj31gi0ovdm5.jpg)
 
 #### 推荐学习
 
