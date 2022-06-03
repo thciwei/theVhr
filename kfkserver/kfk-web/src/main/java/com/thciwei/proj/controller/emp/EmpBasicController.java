@@ -103,11 +103,12 @@ public class EmpBasicController {
 
     @GetMapping("/export")
     public ResponseEntity<byte[]> exportData() {
-        List<Employee> list = (List<Employee>) employeeService.getEmployeeByPage(null, null, null,null).getData();
+        List<Employee> list = (List<Employee>) employeeService.getEmployeeByPage(null, null, new Employee(),null).getData();
 
         return POIUtils.employee2Excel(list);
 
     }
+
 
     @PostMapping("/import")
     public RespBean importData(MultipartFile file) {
