@@ -18,7 +18,6 @@ kfkserver结构如下：
 -- kfk-service
 -- kfk-web
 -- kfk-model
-
 ```
 #### 项目展示
 ![](http://tva1.sinaimg.cn/large/006yRl4Gly1h2e50nsg0sj31gc0oatn9.jpg)
