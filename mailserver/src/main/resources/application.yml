@@ -16,7 +16,7 @@ spring:
   rabbitmq:
     username: guest
     password: guest
-    host: localhost
+    host: 192.168.145.132
     port: 5672
     ##手动确认消息 manual,预加载消息数量 prefetch
     listener:
@@ -25,7 +25,7 @@ spring:
         prefetch: 100
   redis:
     database: 0
-    host: localhost
+    host: 192.168.145.132
     port: 6379
-    password: thciwei
+#    password: thciwei
 

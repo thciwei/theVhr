@@ -10,7 +10,7 @@ spring:
   rabbitmq:
     username: guest
     password: guest
-    host: localhost
+    host: 192.168.145.132
     port: 5672
     publisher-returns: true
     publisher-confirm-type: correlated

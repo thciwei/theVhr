@@ -11,7 +11,7 @@
  Target Server Version : 80016
  File Encoding         : 65001
 
- Date: 30/04/2022 23:31:44
+ Date: 07/06/2022 09:55:52
 */
 
 SET NAMES utf8mb4;
@@ -70,7 +70,7 @@ CREATE TABLE `department`  (
   `enabled` tinyint(1) NULL DEFAULT 1,
   `isParent` tinyint(1) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 114 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 115 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of department
@@ -139,7 +139,7 @@ CREATE TABLE `employee`  (
   CONSTRAINT `employee_ibfk_3` FOREIGN KEY (`posId`) REFERENCES `position` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `employee_ibfk_4` FOREIGN KEY (`nationId`) REFERENCES `nation` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `employee_ibfk_5` FOREIGN KEY (`politicId`) REFERENCES `politicsstatus` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 1983 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 1984 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of employee
@@ -848,7 +848,7 @@ CREATE TABLE `empsalary`  (
   INDEX `empsalary_ibfk_2`(`sid`) USING BTREE,
   CONSTRAINT `empsalary_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `employee` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `empsalary_ibfk_2` FOREIGN KEY (`sid`) REFERENCES `salary` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 65 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 66 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of empsalary
@@ -890,11 +890,11 @@ CREATE TABLE `hr`  (
 -- ----------------------------
 -- Records of hr
 -- ----------------------------
-INSERT INTO `hr` VALUES (3, '系统管理员', '18568887783', '029-82881234', '深圳南山', 1, 'admin', '$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm', 'http://8.129.122.160/group1/M00/00/00/CIF6oGDSiWiAdgGiAAIQx5mnX3s931.png', NULL);
-INSERT INTO `hr` VALUES (5, '刺猬', '18568123489', '029-82123434', '海口美兰', 1, 'ciwei', '$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm', 'https://gitee.com/thciweicloud/tmp/raw/master/ciwei.png', NULL);
-INSERT INTO `hr` VALUES (10, '尤雨溪', '18568123666', '029-82111555', '广州番禺', 1, 'youyuxi', '$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm', 'https://gitee.com/thciweicloud/tmp/raw/master/499550.jpg', NULL);
-INSERT INTO `hr` VALUES (11, '柳宗元', '18568123377', '029-82111333', '广州天河', 1, 'liuzongyuan', '$2a$10$KnmM3PkkmvXqwhVg47jmS.cNKmO7.IZkpZ1e4gjIvfjU3Q8OfZBXC', 'https://gitee.com/thciweicloud/tmp/raw/master/57d172326e39dfbf60fcdb795a08e758_1440w.jpg', NULL);
-INSERT INTO `hr` VALUES (12, '嘉庚', '18568128888', '029-82111222', '广州越秀', 1, 'jiageng', '$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm', 'https://gitee.com/thciweicloud/tmp/raw/master/jiageng3%20.jpg', NULL);
+INSERT INTO `hr` VALUES (3, '系统管理员', '18568887783', '029-82881234', '深圳南山', 1, 'admin', '$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm', 'http://tva1.sinaimg.cn/large/006yRl4Gly1h2e539iif4j30ia0mv3yz.jpg', NULL);
+INSERT INTO `hr` VALUES (5, '刺猬', '18568123489', '029-82123434', '海口美兰', 1, 'ciwei', '$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm', 'http://tva1.sinaimg.cn/large/006yRl4Gly1h2e52wm5e1j307g07g0v8.jpg', NULL);
+INSERT INTO `hr` VALUES (10, '尤雨溪', '18568123666', '029-82111555', '广州番禺', 1, 'youyuxi', '$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm', 'http://tva1.sinaimg.cn/large/006yRl4Gly1h2e53l7gyqj30b40b4aai.jpg', NULL);
+INSERT INTO `hr` VALUES (11, '刘芸希', '18568123377', '029-82111333', '广州天河', 1, 'liuzongyuan', '$2a$10$KnmM3PkkmvXqwhVg47jmS.cNKmO7.IZkpZ1e4gjIvfjU3Q8OfZBXC', 'http://tva1.sinaimg.cn/large/006yRl4Gly1h2e53orvh5j30ia0iadg8.jpg', NULL);
+INSERT INTO `hr` VALUES (12, '嘉庚', '18568128888', '029-82111222', '广州越秀', 1, 'jiageng', '$2a$10$ySG2lkvjFHY5O0./CPIE1OI8VJsuKYEzOYzqIa7AJR6sEgSzUFOAm', 'http://tva1.sinaimg.cn/large/006yRl4Gly1h2e53colaxj308v0d9gm5.jpg', NULL);
 
 -- ----------------------------
 -- Table structure for hr_role
@@ -1117,7 +1117,7 @@ CREATE TABLE `msgcontent`  (
   `message` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of msgcontent
@@ -1136,7 +1136,7 @@ CREATE TABLE `nation`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 56 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 57 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of nation
@@ -1224,7 +1224,7 @@ CREATE TABLE `politicsstatus`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of politicsstatus
