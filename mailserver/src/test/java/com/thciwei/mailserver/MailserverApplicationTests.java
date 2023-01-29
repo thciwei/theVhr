@@ -8,6 +8,7 @@ class MailserverApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println(1);
     }
 
 }
